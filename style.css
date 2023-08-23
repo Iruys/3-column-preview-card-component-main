@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+:root {
+  /* Colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  /* Typography */
+  /* Body Copy */
+  --font-size-body: 15px;
+
+  /* Font */
+  --font-family-lexend-deca: 'Lexend Deca', sans-serif;
+  --font-weight-lexend-deca: 400;
+  --font-family-big-shoulders-display: 'Big Shoulders Display', sans-serif;
+  --font-weight-big-shoulders-display: 700;
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  
+  font-family: var(--font-weight-lexend-deca);
+  font-size: var(--font-size-body);
+}
+  .container .row{
+  max-width: 900px;
+  margin: 120px auto;
+  display: grid;
+  
+}
+
+main .card{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 0 auto;
+  padding: 0 10px;
+  max-height: 500px;
+  
+ 
+}
+
+
+main .card  .content{
+  display: grid;
+  gap: 22px;
+}
+main .card  .content img{
+  width: 50px;
+}
+main  .card h1{
+  text-transform: uppercase;
+  font-family: var(--font-family-big-shoulders-display);
+  font-weight: var(--font-family-big-shoulders-display);
+  color: var(--very-light-gray);
+    
+}
+main  .card p{
+  color: var(--transparent-white);
+  font-family: var(--font-family-lexend-deca);
+ font-size: var(--font-size-body);
+ max-width: 220px;
+ line-height: 23px;
+}
+main .card .brightorange{
+  background-color: var(--bright-orange);
+  padding: 30px 30px;
+  border-radius: 10px 0 0 10px;
+  height:420px;
+}
+main .card .brightorange .buttons button{
+  background-color: var(--transparent-white);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: var(--bright-orange);
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .card .brightorange .buttons button:hover{
+  background-color: var(--bright-orange);
+  color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
+  cursor: pointer;
+  
+}
+
+main .card .SUVs{
+  background-color: var(--dark-cyan);
+  padding: 30px 30px;
+  height:420px;
+}
+main .card .SUVs .buttons button{
+  background-color: var(--transparent-white);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: var(--dark-cyan);
+  transition: 0.5s;
+}
+main .card .SUVs .buttons button:hover{
+  background-color: var(--dark-cyan);
+  color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
+  cursor: pointer;
+}
+
+main .card .Luxury{
+  background-color: var(--very-dark-cyan);
+  padding: 30px 30px;
+  border-radius: 0 10px 10px 0;
+  height:420px;
+}
+main .card .Luxury .buttons button{
+  background-color: var(--transparent-white);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: var(--very-dark-cyan);
+  transition: 0.5s;
+}
+main .card .Luxury .buttons button:hover{
+  background-color: var(--very-dark-cyan);
+  color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
+  cursor: pointer;
+}
+
+@media (max-width:765px) {
+  .container .row{
+    max-width: 425px;
+    margin: 0 auto;
+    display: grid;
+    min-height: 500px;
+  
+  }
+  main .card  .content{
+    display: grid;
+    gap: 13px;
+  }
+  main .card{
+    display: block;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px 10px;
+    max-width: 355px;;
+    max-height: 1200px;
+    
+    
+  }  
+  main .card .brightorange{
+    background-color: var(--bright-orange);
+    padding: 30px 30px;
+    border-radius: 10px 10px 0 0;
+    height:318px;
+  }
+  main .card .SUVs{
+    background-color: var(--dark-cyan);
+    padding: 30px 30px;
+    height:355px;
+}
+main .card .Luxury{
+  background-color: var(--very-dark-cyan);
+  padding: 30px 30px;
+  border-radius: 0 0 10px 10px;
+  height:355px;
+}
+main  .card p{
+  color: var(--transparent-white);
+  font-family: var(--font-family-lexend-deca);
+ font-size: var(--font-size-body);
+ max-width: 252px;
+ line-height: 23px;
+
+}
+}
