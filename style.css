@@ -150,7 +150,7 @@ main .card .Luxury .buttons button:hover{
     grid-template-columns: repeat(3,1fr);
     padding: 10px 10px;
     max-height: 1200px;
-     width: 377px;
+     max-width: 377px;
     
   }  
   main .card .brightorange{
