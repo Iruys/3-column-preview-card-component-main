@@ -149,9 +149,8 @@ main .card .Luxury .buttons button:hover{
     display: block;
     grid-template-columns: repeat(3,1fr);
     padding: 10px 10px;
-    max-width: 355px;;
     max-height: 1200px;
-    
+     width: 425px;
     
   }  
   main .card .brightorange{
@@ -170,6 +169,7 @@ main .card .Luxury{
   padding: 30px 30px;
   border-radius: 0 0 10px 10px;
   height:355px;
+ 
 }
 main  .card p{
   color: var(--transparent-white);
