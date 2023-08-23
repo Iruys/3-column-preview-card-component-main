@@ -150,7 +150,6 @@ main .card .Luxury .buttons button:hover{
     grid-template-columns: repeat(3,1fr);
     padding: 10px 10px;
     max-height: 1200px;
-     max-width: 377px;
     
   }  
   main .card .brightorange{
@@ -158,6 +157,7 @@ main .card .Luxury .buttons button:hover{
     padding: 30px 30px;
     border-radius: 10px 10px 0 0;
     height:318px;
+    width: 400px;
   }
   main .card .SUVs{
     background-color: var(--dark-cyan);
