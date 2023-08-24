@@ -30,9 +30,7 @@ body{
   font-family: var(--font-weight-lexend-deca);
   font-size: var(--font-size-body);
 }
-.container{
-  max-width: 1440px;
-}
+
   .container .row{
   max-width: 900px;
   margin: 120px auto;
